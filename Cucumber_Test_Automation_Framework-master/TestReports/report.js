@@ -1,0 +1,104 @@
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("End2End_Test.feature");
+formatter.feature({
+  "line": 1,
+  "name": "End to End Functional Test",
+  "description": "",
+  "id": "end-to-end-functional-test",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "Product Search and add to shopping cart",
+  "description": "",
+  "id": "end-to-end-functional-test;product-search-and-add-to-shopping-cart",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 4,
+  "name": "user is on Home Page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 5,
+  "name": "he search for \"Head first java\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 6,
+  "name": "choose to buy the first item",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 7,
+  "name": "Add product to shopping cart",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "User clicks on shopping cart",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "Cliks on proceed to check out",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "User should be asked to login before checkout",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.userIsOnHomePage()"
+});
+formatter.result({
+  "duration": 41288451359,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Head first java",
+      "offset": 15
+    }
+  ],
+  "location": "Steps.heSearchFor(String)"
+});
+formatter.result({
+  "duration": 6952316553,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.chooseToBuyTheFirstItem()"
+});
+formatter.result({
+  "duration": 10071113259,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h2[@data-attribute\u003d\u0027Head First Java, 2nd Edition\u0027]\"}\n  (Session info: chrome\u003d72.0.3626.109)\n  (Driver info: chromedriver\u003d2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.7.0\u0027, revision: \u00272321c73\u0027, time: \u00272017-11-02T22:22:35.584Z\u0027\nSystem info: host: \u0027HW0924\u0027, ip: \u0027192.168.0.47\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\\Users\\E001663\\AppData\\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55795}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.109, webStorageEnabled: true}\nSession ID: 4fbf29ebae6b87a070368ff9c111b5b9\n*** Element info: {Using\u003dxpath, value\u003d//h2[@data-attribute\u003d\u0027Head First Java, 2nd Edition\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.click(Unknown Source)\r\n\tat pageobjects.ProductsPage.clickOnHeadFirstJava(ProductsPage.java:28)\r\n\tat stepdefinition.Steps.chooseToBuyTheFirstItem(Steps.java:48)\r\n\tat ✽.And choose to buy the first item(End2End_Test.feature:6)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "Steps.addsProductToShoppingCart()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.userClicksOnShoppingCart()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.userClicksOnProceedCheckOut()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.enterPersonalDetailsOnLoginPage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+});
